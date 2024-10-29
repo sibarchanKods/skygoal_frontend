@@ -27,6 +27,7 @@ export const signUp = async (data) => {
 export const logout = async (data) => {
   try {
     const response = await api.post("/logout", data);
+    console.log(response);
     return response;
   } catch (error) {
     console.log(error);

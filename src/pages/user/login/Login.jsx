@@ -50,8 +50,6 @@ const Login = () => {
         dispatch(setUser(user));
         navigate("/");
       } else {
-        console.log(response.data.message);
-
         setError(response.data.message);
         setTimeout(() => setError(false), 2500);
       }
