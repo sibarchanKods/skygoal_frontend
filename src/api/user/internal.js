@@ -34,7 +34,6 @@ export const logout = async (data) => {
   }
 };
 
-// auto token refresh
 api.interceptors.response.use(
   (config) => config,
   async (error) => {

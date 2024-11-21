@@ -12,7 +12,7 @@ const UserRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={isAuth ? <Home /> : <Login />} />
-      <Route path="/sign-up" element={<SignUp />} />
+      <Route path="/sign-up" element={isAuth ? <Home /> : <SignUp />} />
     </Routes>
   );
 };
